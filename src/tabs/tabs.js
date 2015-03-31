@@ -95,6 +95,7 @@ angular.module('ui.bootstrap.tabs', [])
     link: function(scope, element, attrs) {
       scope.vertical = angular.isDefined(attrs.vertical) ? scope.$parent.$eval(attrs.vertical) : false;
       scope.justified = angular.isDefined(attrs.justified) ? scope.$parent.$eval(attrs.justified) : false;
+      scope.hideTabs = angular.isDefined(attrs.hideTabs) ? scope.$parent.$eval(attrs.hideTabs) : false;
     }
   };
 })
